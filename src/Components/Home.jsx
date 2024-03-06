@@ -4,11 +4,12 @@ import './Home.css'
 
 export default function Home() {
     const [dogs, setDogs] = useState([])
+    const [search, setSearch] = useState(false)
 
 
     useEffect(() => {
         const fetchDogData = async () => {
-            const breedsResponse = await fetch("https://api.thedogapi.com/v1/breeds?limit=30");
+            const breedsResponse = await fetch("https://api.thedogapi.com/v1/breeds?limit=100");
             const dataBreeds = await breedsResponse.json()
             console.log(dataBreeds)
 
@@ -21,7 +22,7 @@ export default function Home() {
     return (
         <>
         <header>
-            <h1>Pawsome</h1> <img src="" alt="" />
+            <h1 className='main-header'>Pawsome</h1> <img src="" alt="" />
         </header>
         <form action="">
             <input type="text" name="search" id="search" placeholder='Search for Dogs...Woof Woof' />
@@ -31,13 +32,16 @@ export default function Home() {
         
         <div className='main-dog-page'>
             {dogs.map((dog) => (
-                <article key={dog.id}>
-                    <Link>
+                <Link
+                to={`/${dog.name}`}
+                key={dog.id}
+                > 
+                <article> 
                     <img src={`https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg`} alt={dog.name} />
-                    </Link>
                     <h3>{dog.name}</h3>
-                    <p>{dog.bred_for}</p>
+                    <p>Bred for: {dog.bred_for}</p>
                 </article>
+                    </Link>
             ))}
         </div>
         </>
