@@ -69,6 +69,7 @@ export default function Login() {
         />
         <input
           placeholder="Password..."
+          type="password"
           onChange={(event) => { setRegisterPassword(event.target.value) }}
         />
 
@@ -85,6 +86,7 @@ export default function Login() {
           }}
         />
         <input
+          type="password"
           placeholder="Password..."
           onChange={(event) => {
             setLoginPassword(event.target.value)

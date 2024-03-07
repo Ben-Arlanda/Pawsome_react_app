@@ -1,0 +1,13 @@
+h2 {
+  font-family: "Varela Round", sans-serif;
+}
+
+.favourite-header {
+  margin-left: 20px;
+}
+
+.no-favourites {
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+  margin-left: 0;
+}

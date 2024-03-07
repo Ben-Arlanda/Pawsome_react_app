@@ -5,7 +5,7 @@
 .main-dog-page-grid {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   padding: 10px;
+   padding: px;
    gap: 15px;
    margin: 50px;
 }
@@ -47,6 +47,7 @@ nav {
    font-size: 15px;
    text-decoration: none;
    color: #666;
+   font-family: "Varela Round", sans-serif;
 
 }
 
@@ -54,24 +55,31 @@ input {
    width: 500px;
    height: 50px;
    padding: 8px;
+   border: none;
 }
 
-button {
+/* button {
    background-color: black;
    color: white;
    padding: 10px 20px;
    border: none;
    cursor: pointer;
-}
+} */
 
 .search-btn {
    height: 50px;
    background-color: #1d5191;
+   cursor: pointer;
+   color: white;
 }
 
 
 .favourite-btn {
    width: 100%;
+   /* background-color: black; */
+   color: black;
+   cursor: pointer;
+   font-family: "Varela Round", sans-serif;
 }
 
 .main-header {
@@ -116,11 +124,12 @@ button {
 .main-dog-page {
    padding: 15px;
    width: 100%;
+   border: 1px solid #efefef;
    aspect-ratio: 1;
    transition: transform 0.3s ease-in-out;
    overflow: hidden;
    box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
-   border-radius: 10px 10px 0px 0px;
+   /* border-radius: 10px 10px 0px 0px; */
 }
 
 footer {
@@ -130,7 +139,7 @@ footer {
 
 .main-container {
    margin: 50px;
-   background-color: #efefef;
+   background-color: white;
 }
 
 body {

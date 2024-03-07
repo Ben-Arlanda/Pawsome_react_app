@@ -53,13 +53,13 @@ export default function Home({ addToFavourites }) {
                             </div>
                             <nav>
                                 <Link to="/home" className="nav-link">Home</Link>
-                                <Link to="/favourites" className="nav-link">Favorites</Link>
+                                <Link to="/favourites" className="nav-link">Favourites</Link>
                                 <Link to="/login" className="nav-link">Login</Link>
                             </nav>
                             <img className='main-banner' src="src/Images/front-view-beautiful-dog-with-copy-space_23-2148786562.png" alt="" />
                             <div className='search-bar'>
                                 <form onSubmit={handleSubmit}>
-                                    <input type="text" name="search" id="search" placeholder='Search for Dogs'
+                                    <input type="text" name="search" id="search" placeholder='Search for Dog Breeds'
                                         value={text}
                                         onChange={(e) => setText(e.target.value)} />
                                     <button className='search-btn'>Search</button>
@@ -70,7 +70,7 @@ export default function Home({ addToFavourites }) {
                             {!search ? (
                                 <>
                                     {dogs.map((dog) => (
-                                        <div key={dog.id}>
+                                        <div key={dog.id} className='dog-card'>
                                             <Link to={`/${dog.name}`} key={dog.id}>
                                                 <article className='main-dog-page'>
                                                     <img src={`https://cdn2.thedogapi.com/images/${dog.reference_image_id}.jpg`} alt={`Image of ${dog.name}`} />
@@ -80,7 +80,7 @@ export default function Home({ addToFavourites }) {
 
                                                 </article>
                                             </Link>
-                                            <button className='favourite-btn' onClick={() => addToFavourites(dog)}>Add to Favorites</button>
+                                            <button className='favourite-btn' onClick={() => addToFavourites(dog)}>Add to Favourites</button>
                                         </div>
                                     ))}
                                 </>
@@ -104,6 +104,9 @@ export default function Home({ addToFavourites }) {
                                 </>
                             )}
                         </div>
+                            <div className='footer'>
+                                <p>&copy; 2024 devben. All rights reserved.</p>
+                            </div>
                     </section>
                 </>
             )}

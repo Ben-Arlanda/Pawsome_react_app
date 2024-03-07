@@ -22,13 +22,13 @@ export default function SingleDog() {
     return (
         <>
             <header>
-                <nav className="nav-header">
-                    <Link to="/home">Home</Link>
-                    <Link to="/favourites">Favorites</Link>
-                    <Link to="/login">Login</Link>
+                <nav>
+                    <Link to="/home" className="nav-link">Home</Link>
+                    <Link to="/favourites" className="nav-link">Favorites</Link>
+                    <Link to="/login" className="nav-link">Login</Link>
                 </nav>
                 <h1 className='main-header'>Pawsome</h1>
-                <h3>The app for a man's best friend</h3>
+                {/* <h3>The app for a man's best friend</h3> */}
                 <img className='paw-image' src="src/Images/1.png" alt="" />
             </header>
             <section className="single-dog">
@@ -57,6 +57,9 @@ export default function SingleDog() {
                     </div>
                 ))}
             </section>
+                <div className='footer'>
+                    <p>&copy; 2024 devben. All rights reserved.</p>
+                </div>
         </>
     )
 }

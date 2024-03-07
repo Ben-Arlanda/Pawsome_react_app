@@ -20,9 +20,10 @@ function FavouritesPage({ favourites, removeFromFavourites }) {
 
       <img className='main-banner' src="src/Images/front-view-beautiful-dog-with-copy-space_23-2148786562.png" alt="" />
 
-    </div><div className="main-dog-page-grid">
-
         <h2 className="favourite-header">Your Favourites Dog Breeds</h2>
+    </div>
+    <div className="main-dog-page-grid">
+
         {favourites && favourites.length > 0 ? (
           favourites.map((dog) => (
             <div key={dog.id}>
@@ -36,9 +37,14 @@ function FavouritesPage({ favourites, removeFromFavourites }) {
             </div>
           ))
         ) : (
-          <p>No favourites yet.</p>
+          <p className="no-favourites">No favourites yet.</p>
         )}
-      </div></>
+      </div>
+      <div className='footer'>
+        <p>&copy; 2024 devben. All rights reserved.</p>
+      </div>
+      </>
+      
   );
 }
 
