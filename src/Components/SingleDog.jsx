@@ -21,9 +21,20 @@ export default function SingleDog() {
 
     return (
         <>
+            <header>
+                <nav className="nav-header">
+                    <Link to="/home">Home</Link>
+                    <Link to="/favourites">Favorites</Link>
+                    <Link to="/login">Login</Link>
+                </nav>
+                <h1 className='main-header'>Pawsome</h1>
+                <h3>The app for a man's best friend</h3>
+                <img className='paw-image' src="src/Images/1.png" alt="" />
+            </header>
             <section className="single-dog">
                 {dog.map((elem) => (
                     <div key={elem.id}>
+
                         <article>
                             <img className="single-dog-img"
                                 src={`https://cdn2.thedogapi.com/images/${elem.reference_image_id}.jpg`}
@@ -42,10 +53,6 @@ export default function SingleDog() {
                                 <li><span>Lifespan:</span>{" "}{elem.life_span}</li>
                                 <li><span>Temperament:</span>{" "}{elem.temperament}</li>
                             </ul>
-                            <Link
-                                to="/home">
-                                Back
-                            </Link>
                         </article>
                     </div>
                 ))}

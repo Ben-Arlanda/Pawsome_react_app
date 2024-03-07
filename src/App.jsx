@@ -8,7 +8,7 @@ import { useState } from "react";
 function App() {
 
   const [favourites, setFavourites] = useState([])
-  
+
 
   const addToFavourites = (dog) => {
     console.log('Updated favourites:', favourites)
@@ -34,7 +34,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home favourites={favourites} addToFavourites={addToFavourites} />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/:name" element={<SingleDog />} />
           <Route path="/favourites" element={<FavouritesPage favourites={favourites} removeFromFavourites={removeFromFavourites} />} />
         </Routes>

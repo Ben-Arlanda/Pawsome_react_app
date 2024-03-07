@@ -10,6 +10,11 @@ ul {
 
 li {
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .single-dog {
@@ -20,4 +25,8 @@ li {
 
 article {
   margin: 0;
+}
+
+.single-dog-img {
+  border-radius: 5px;
 }
