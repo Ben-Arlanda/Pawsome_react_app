@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
+import './SingleDog.css'
 
 export default function SingleDog() {
 
@@ -24,7 +25,7 @@ export default function SingleDog() {
                 {dog.map((elem) => (
                     <div key={elem.id}>
                         <article>
-                            <img
+                            <img className="single-dog-img"
                                 src={`https://cdn2.thedogapi.com/images/${elem.reference_image_id}.jpg`}
                                 alt={elem.name} />
                         </article>
@@ -42,7 +43,7 @@ export default function SingleDog() {
                                 <li><span>Temperament:</span>{" "}{elem.temperament}</li>
                             </ul>
                             <Link
-                                to="/">
+                                to="/home">
                                 Back
                             </Link>
                         </article>
