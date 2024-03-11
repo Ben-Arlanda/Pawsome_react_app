@@ -31,3 +31,10 @@ article {
 .single-dog-img {
   border-radius: 5px;
 }
+
+.footer {
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 10px;
+  font-size: 12px;
+  bottom: 0;
+}

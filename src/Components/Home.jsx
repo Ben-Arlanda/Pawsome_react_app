@@ -52,7 +52,7 @@ export default function Home({ addToFavourites }) {
                                 <img className='paw-image' src="src/Images/2.png" alt="" />
                             </div>
                             <nav>
-                                <Link to="/home" className="nav-link">Home</Link>
+                                <Link to="/" className="nav-link">Home</Link>
                                 <Link to="/favourites" className="nav-link">Favourites</Link>
                                 <Link to="/login" className="nav-link">Login</Link>
                             </nav>
@@ -104,9 +104,9 @@ export default function Home({ addToFavourites }) {
                                 </>
                             )}
                         </div>
-                            <div className='footer'>
+                            <footer className='footer'>
                                 <p>&copy; 2024 devben. All rights reserved.</p>
-                            </div>
+                            </footer>
                     </section>
                 </>
             )}

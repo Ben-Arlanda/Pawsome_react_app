@@ -23,7 +23,7 @@ export default function SingleDog() {
         <>
             <header>
                 <nav>
-                    <Link to="/home" className="nav-link">Home</Link>
+                    <Link to="/" className="nav-link">Home</Link>
                     <Link to="/favourites" className="nav-link">Favorites</Link>
                     <Link to="/login" className="nav-link">Login</Link>
                 </nav>
@@ -57,9 +57,9 @@ export default function SingleDog() {
                     </div>
                 ))}
             </section>
-                <div className='footer'>
+                <footer className='footer'>
                     <p>&copy; 2024 devben. All rights reserved.</p>
-                </div>
+                </footer>
         </>
     )
 }
