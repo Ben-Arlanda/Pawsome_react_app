@@ -28,8 +28,7 @@ export default function SingleDog() {
                     <Link to="/login" className="nav-link">Login</Link>
                 </nav>
                 <h1 className='main-header'>Pawsome</h1>
-                {/* <h3>The app for a man's best friend</h3> */}
-                <img className='paw-image' src="src/Images/1.png" alt="" />
+                <img className='paw-image' src="public/Images/1.png" alt="" />
             </header>
             <section className="single-dog">
                 {dog.map((elem) => (
