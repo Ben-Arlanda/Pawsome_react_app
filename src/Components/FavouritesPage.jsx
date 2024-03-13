@@ -1,6 +1,8 @@
 import React from "react";
 import './FavouritesPage.css'
 import { Link } from 'react-router-dom';
+import bannerImage from '/images/front-view-beautiful-dog-with-copy-space_23-2148786562.png'
+import pawImage from '/images/2.png'
 
 
 function FavouritesPage({ favourites, removeFromFavourites }) {
@@ -9,18 +11,18 @@ function FavouritesPage({ favourites, removeFromFavourites }) {
 
       <div className='header-container'>
         <h1 className='main-header'>Pawsome</h1>
-        <img className='paw-image' src="public/Images/2.png" alt="" />
+        <img className='paw-image' src={pawImage} alt="" />
       </div>
 
       <nav>
         <Link to="/" className="nav-link">Home</Link>
-        <Link to="/favourites" className="nav-link">Favorites</Link>
+        <Link to="/favourites" className="nav-link">Favourites</Link>
         <Link to="/login" className="nav-link">Login</Link>
       </nav>
 
-      <img className='main-banner' src="public/Images/front-view-beautiful-dog-with-copy-space_23-2148786562.png" alt="" />
+      <img className='main-banner' src={bannerImage} alt="" />
 
-        <h2 className="favourite-header">Your Favourites Dog Breeds</h2>
+        <h2 className="favourite-header">Your Favourite Dog Breeds</h2>
     </div>
     <div className="main-dog-page-grid">
 
@@ -33,7 +35,7 @@ function FavouritesPage({ favourites, removeFromFavourites }) {
                   <h3 className="dog-name">{dog.name}</h3>
                 </article>
               </Link>
-              <button className="favourite-btn" onClick={() => removeFromFavourites(dog)}>Remove from Favorites</button>
+              <button className="favourite-btn" onClick={() => removeFromFavourites(dog)}>Remove from Favourites</button>
             </div>
           ))
         ) : (

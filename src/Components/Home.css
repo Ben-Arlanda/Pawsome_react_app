@@ -7,7 +7,7 @@
    grid-template-columns: repeat(4, 1fr);
    padding: px;
    gap: 15px;
-   margin: 50px;
+   margin: 70px;
 }
 
 .content-container {
@@ -128,12 +128,12 @@ footer {
 }
 
 .main-container {
-   margin: 15px;
-   background-color: white;
+   /* margin: 15px; */
+   background-color: #fff; 
 }
 
 body {
-   background-color: white;
+   background-color: #fff;
    margin: 0;
 }
 

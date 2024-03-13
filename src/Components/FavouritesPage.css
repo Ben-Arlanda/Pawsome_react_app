@@ -1,9 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 h2 {
   font-family: "Varela Round", sans-serif;
 }
 
 .favourite-header {
   margin-left: 20px;
+}
+
+body {
+  background-color: #fff;
 }
 
 .no-favourites {

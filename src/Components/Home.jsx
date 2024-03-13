@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './Home.css'
+import pawImage from '/images/2.png'
+import bannerImage from '/images/front-view-beautiful-dog-with-copy-space_23-2148786562.png'
 
 export default function Home({ addToFavourites }) {
 
@@ -49,14 +51,14 @@ export default function Home({ addToFavourites }) {
                         <div className='content-container'>
                             <div className='header-container'>
                                 <h1 className='main-header'>Pawsome</h1>
-                                    <img className='paw-image' src="public/Images/2.png" alt="" />
+                                    <img className='paw-image' src={pawImage} alt="" />
                             </div>
                             <nav>
                                 <Link to="/" className="nav-link">Home</Link>
                                 <Link to="/favourites" className="nav-link">Favourites</Link>
                                 <Link to="/login" className="nav-link">Login</Link>
                             </nav>
-                                <img className='main-banner' src="public/Images/front-view-beautiful-dog-with-copy-space_23-2148786562.png" alt="" />
+                                <img className='main-banner' src={bannerImage} alt="" />
                             <div className='search-bar'>
                                 <form onSubmit={handleSubmit}>
                                     <input type="text" name="search" id="search" placeholder='Search for Dog Breeds'

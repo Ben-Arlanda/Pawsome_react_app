@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import './SingleDog.css'
+import pawImage from '/images/1.png'
 
 export default function SingleDog() {
 
@@ -23,12 +24,12 @@ export default function SingleDog() {
         <>
             <header>
                 <nav>
-                    <Link to="/" className="nav-link">Home</Link>
-                    <Link to="/favourites" className="nav-link">Favorites</Link>
-                    <Link to="/login" className="nav-link">Login</Link>
+                    <Link to="/" className="nav-link-single">Home</Link>
+                    <Link to="/favourites" className="nav-link-single">Favourites</Link>
+                    <Link to="/login" className="nav-link-single">Login</Link>
                 </nav>
-                <h1 className='main-header'>Pawsome</h1>
-                <img className='paw-image' src="public/Images/1.png" alt="" />
+                <h1 className='main-header-single'>Pawsome</h1>
+                <img className='paw-image' src={pawImage} alt="" />
             </header>
             <section className="single-dog">
                 {dog.map((elem) => (

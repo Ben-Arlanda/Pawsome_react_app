@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .single-dog-img {
   width: 700px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 ul {
@@ -18,6 +22,19 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.main-header-single {
+  /* display: flex; */
+  color: black;
+  font-size: 50px;
+  margin: 0px 0px 0px 10px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  font-family: "Varela Round", sans-serif;
+
+}
+
 .single-dog {
   display: flex;
   justify-content: center;
@@ -30,6 +47,18 @@ article {
 
 .single-dog-img {
   border-radius: 5px;
+}
+
+.nav-link-single {
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  font-size: 25px;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  background-color: #efefef;
 }
 
 .footer {

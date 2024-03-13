@@ -6,22 +6,22 @@ I built a react.js app called Pawesome that integrated the Dog API. I wanted to 
 
 ** Please note firebase login is work in progess and auth restricted access does not work**
 
-## :computer: [Click here](https://ben-arlanda.github.io/Pawsome_react_app/) to see the app!
+## :computer: [Click here](https://pawesome-react-project.surge.sh/) to see the app!
 
-![screenshot](/src/Images/Screenshot%202024-03-08%20at%209.49.35%20am.png)
+![screenshot](/public/Images/Screenshot%202024-03-08%20at%209.49.35%20am.png)
 
 Users can view all dog breeds on the home page and search using the search bar. 
 
 ## :page_facing_up: Features  
 
-![screenshot](/src/Images/Screenshot%202024-03-08%20at%209.50.26%20am.png)
+![screenshot](/public/Images/Screenshot%202024-03-08%20at%209.50.26%20am.png)
 
 You can add dog breeds to the favourites page and also remove them. This adds a better user experience. 
 
-![screenshot](/src/Images/Screenshot%202024-03-08%20at%209.51.07%20am.png)
+![screenshot](/public/Images/Screenshot%202024-03-08%20at%209.51.07%20am.png)
 
 
-![screenshot](/src/Images/Screenshot%202024-03-08%20at%209.52.01%20am.png)
+![screenshot](/public/Images/Screenshot%202024-03-08%20at%209.52.01%20am.png)
 
 Users can view all the dog details on each link which is all retrieved from the API. 
 
@@ -37,10 +37,12 @@ I made sure I had a functional router access for each page using React-Router.
 
 Another problem I came across was trying to resolve how to render the favourite dog breeds on another page. I realised after talking with my tutor I had to lift my hook and use it in my parent component so I could pass the props (favourites, addToFavourites, removeFromFavourites) to the child components for this to work. 
 
+I also learned how to use firebase authentication to register and login users using hooks and state management connecting to their console and api. This is still work in progress but you can register and login. I have not implemented auth restriction yet. 
+
 
 ## :rocket: Technologies used
 
-JavaScript, React.js, DOM-Router, API, HTML, CSS, Firebase. 
+JavaScript, React.js, React-Router, Vite, API, HTML, CSS, Firebase. 
 
 
 ## :white_check_mark: Future updates
