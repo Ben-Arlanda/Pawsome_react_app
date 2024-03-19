@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fortawesome/fontawesome-free':
+    specifier: ^6.5.1
+    version: 6.5.1
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -971,6 +974,12 @@ packages:
 
   /@firebase/webchannel-wrapper@0.10.5:
     resolution: {integrity: sha512-eSkJsnhBWv5kCTSU1tSUVl9mpFu+5NXXunZc83le8GMjMlsWwQArSc7cJJ4yl+aDFY0NGLi0AjZWMn1axOrkRg==}
+    dev: false
+
+  /@fortawesome/fontawesome-free@6.5.1:
+    resolution: {integrity: sha512-CNy5vSwN3fsUStPRLX7fUYojyuzoEMSXPl7zSLJ8TgtRfjv24LOnOWKT2zYwaHZCJGkdyRnTmstR0P+Ah503Gw==}
+    engines: {node: '>=6'}
+    requiresBuild: true
     dev: false
 
   /@grpc/grpc-js@1.9.14:

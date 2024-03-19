@@ -6,6 +6,7 @@ import FavouritesPage from './Components/FavouritesPage';
 import { useState } from "react";
 
 
+
 function App() {
   
   const [favourites, setFavourites] = useState([])

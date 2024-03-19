@@ -61,10 +61,9 @@ export default function Home({ addToFavourites }) {
                                 <img className='main-banner' src={bannerImage} alt="" />
                             <div className='search-bar'>
                                 <form onSubmit={handleSubmit}>
-                                    <input type="text" name="search" id="search" placeholder='Search for Dog Breeds'
+                                    <input type="text" class= "icon" name="search" id="search" placeholder='Search for Dog Breeds'
                                         value={text}
                                         onChange={(e) => setText(e.target.value)} />
-                                    <button className='search-btn'>Search</button>
                                 </form>
                             </div>
                         </div>

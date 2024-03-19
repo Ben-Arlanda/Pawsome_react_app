@@ -5,6 +5,7 @@
 .single-dog-img {
   width: 700px;
   margin-top: 80px;
+  border-radius: 5px;
 }
 
 ul {
@@ -45,10 +46,6 @@ article {
   margin: 0;
 }
 
-.single-dog-img {
-  border-radius: 5px;
-}
-
 .nav-link-single {
   text-decoration: none;
   color: black;
@@ -66,4 +63,42 @@ body {
   margin-left: 10px;
   font-size: 12px;
   bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .main-header-single {
+    font-size: 20px;
+  }
+
+  .nav-link-single {
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  nav {
+    top: 5px;
+    left: 130px;
+  }
+
+  .single-dog-img {
+    width: 300px;
+    margin: 30px; 
+  }
+
+  h1 {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+
+  li {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+
+  .footer {
+    font-size: 5px;
+  }
+
 }

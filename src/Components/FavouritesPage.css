@@ -19,3 +19,19 @@ body {
   font-family: "Varela Round", sans-serif;
   margin-left: 0;
 }
+
+@media only screen and (max-width: 600px) {
+
+
+  .main-header-single {
+    font-size: 20px;
+  }
+
+  .favourite-header {
+    font-size: 15px;
+  }
+
+  .no-favourites {
+    font-size: 6px;
+  }
+}

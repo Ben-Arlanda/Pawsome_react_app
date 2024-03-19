@@ -2,8 +2,6 @@
 
 I built a react.js app called Pawesome that integrated the Dog API. I wanted to improve my API experience and also work with something I love, dogs. Its an easy way to search for dog breeds in one place if you have an interest in breeding or buying a dog. 
 
-** Responsive design still in progress**
-
 ** Please note firebase login is work in progess and auth restricted access does not work**
 
 ## :computer: [Click here](https://pawesome-react-project.surge.sh/) to see the app!
